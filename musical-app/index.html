@@ -10,6 +10,7 @@ con un documento HTML-->
  <meta name="author" content="Dana Rodríguez">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
+ <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="styles.css">
 
 <title>Musical Dana</title>
@@ -22,40 +23,59 @@ con un documento HTML-->
      <h1>Musical Dana</h1>
      <p class="pmusical">Escucha mis 3 canciones de POP</p>
      
-         <div class="lista-canciones">
+         <!-- <div class="lista-canciones"> -->
+
            <!--CANCION 1--> 
-            <div class="canciones">
-                <p>1. Taste back - Harry Styles</p>
-                <audio controls class="audio-player">
+           <!--  <div class="canciones"> -->
+               <!--  <p>1. Taste back - Harry Styles</p> -->
+               <!--  <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Harry Styles - Taste Back.mp3" type="audio/mpeg">
-                </audio>
+                   <!--  <source src="Harry Styles - Taste Back.mp3" type="audio/mpeg"> -->
+                <!-- </audio> -->
                 
-            </div>
+           <!--  </div> -->
 
              <!--CANCION 2--> 
-            <div class="canciones">
-                <p>2. Green Light - Lorde</p>
-                <audio controls class="audio-player">
+           <!--  <div class="canciones"> -->
+                <!-- <p>2. Green Light - Lorde</p> -->
+               <!--  <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Lorde - Green Light.mp3" type="audio/mpeg">
-                </audio>
+                  <!--   <source src="Lorde - Green Light.mp3" type="audio/mpeg"> -->
+               <!--  </audio> -->
                 
-            </div>
+            <!-- </div> -->
 
             <!--CANCION 3--> 
-            <div class="canciones">
-                <p>3. Style - Taylor Swift</p>
-                <audio controls class="audio-player">
+           <!--  <div class="canciones"> -->
+                <!-- <p>3. Style - Taylor Swift</p> -->
+               <!--  <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Taylor Swift - Style.mp3" type="audio/mpeg">
-                </audio>
+                  <!--   <source src="Taylor Swift - Style.mp3" type="audio/mpeg"> -->
                 
-            </div>
+           <!--  </div> -->
+       <!--  </div>  -->
 
 
+    <!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">Taste Back - Harry Styles</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="Harry Styles - Taste Back.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
         </div>
-    
+      </div>
+
     </div>
+
+<script src="script.js"></script>
 </body>
 </html>

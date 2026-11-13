@@ -58,7 +58,37 @@ p{
 }
 
 .canciones {
-    background-color: #cfddec; /* Un gris muuuy clarito */
+    background-color: #edf4fb; /* Un gris muuuy clarito */
     padding: 10px;
     border-radius: 10px;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.controles button {
+    background-color: #960249;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.controles button:hover {
+    background-color: #f81884;
 }
